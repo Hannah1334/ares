@@ -1,0 +1,447 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#510F10;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #222222;}
+
+#leftsymbol {
+position:absolute;
+width:10%;
+height:20%;
+top:40%;
+left:10%;
+background-image: url('https://i.imgur.com/UqRy3D4.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#copyright {
+position:absolute;
+width:5%;
+height:10%;
+top:45%;
+left:12.52%;
+color:#510F10;
+font-size:6vh;
+text-align:center;
+line-height:1.7;
+}
+
+#rightsymbol {
+position:absolute;
+width:10%;
+height:20%;
+top:40%;
+left:80%;
+background-image: url('https://i.imgur.com/UqRy3D4.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#venus {
+position:absolute;
+width:5%;
+height:10%;
+top:45%;
+left:82.5%;
+color:#510F10;
+font-size:6vh;
+text-align:center;
+line-height:1.5;
+}
+
+#box1 {
+position:absolute;
+background-color:rgba(41, 0, 0, 0.72);
+width:50%;
+height:9%;
+top:24%;
+left:25%;
+}
+
+#title {
+position:absolute;
+background-color:#000000;
+width:19%;
+height:5%;
+top:26%;
+left:26%;
+font-family: 'Alegreya Sans SC', sans-serif;
+text-align:center;
+color:#652324;
+font-size:4.1vh;
+letter-spacing:5px;
+}
+
+#tabholder {
+position:absolute;
+background-color:#000000;
+width:28%;
+height:5%;
+top:26%;
+left:46%;
+}
+
+#box2 {
+position:absolute;
+background-color:rgba(41, 0, 0, 0.72);
+width:20%;
+height:30%;
+top:35%;
+left:25%;
+}
+
+#box3 {
+position:absolute;
+background-color:rgba(41, 0, 0, 0.72);
+width:20%;
+height:9%;
+top:67%;
+left:25%;
+}
+
+#basics {
+position:absolute;
+background-color:#000000;
+width:18%;
+height:5%;
+top:69%;
+left:26%;
+font-family: 'Hind Vadodara', sans-serif;
+color:#FFFFFF;
+text-align:center;
+font-size:2vh;
+line-height:2.5;
+}
+
+#box4 {
+position:absolute;
+background-color:rgba(41, 0, 0, 0.72);
+width:19%;
+height:41%;
+top:35%;
+left:46%;
+}
+
+#content {
+position:absolute;
+overflow:auto;
+padding:2%;
+background-color:#000000;
+width:13%;
+height:28.5%;
+top:37%;
+left:47%;
+color:#FFFFFF;
+font-size:1.5vh;
+font-family: 'Hind Vadodara', sans-serif;
+}
+
+#box5 {
+position:absolute;
+background-color:rgba(41, 0, 0, 0.72);
+width:4%;
+height:41%;
+top:35%;
+left:66%;
+background-image: url('https://i.imgur.com/DHxaERp.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:left !important; 
+background-size:cover;
+}
+
+#box6 {
+position:absolute;
+background-color:rgba(41, 0, 0, 0.72);
+width:4%;
+height:41%;
+top:35%;
+left:71%;
+background-image: url('https://i.imgur.com/DHxaERp.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:right !important; 
+background-size:cover;
+}
+
+#tabbox1 {
+position:absolute;
+width:15%;
+height:100%;
+top:0%;
+left:0%;
+}
+
+#tabbox2 {
+position:absolute;
+width:15%;
+height:100%;
+top:0%;
+left:17%;
+}
+
+#tabbox3 {
+position:absolute;
+width:15%;
+height:100%;
+top:0%;
+left:34%;
+}
+
+#tabbox4 {
+position:absolute;
+width:15%;
+height:100%;
+top:0%;
+left:51%;
+}
+
+#tabbox5 {
+position:absolute;
+width:15%;
+height:100%;
+top:0%;
+left:68%;
+}
+
+#tabbox6 {
+position:absolute;
+width:15%;
+height:100%;
+top:0%;
+left:85%;
+}
+
+.tabs{
+display:block;
+width:100%;
+height:100%;
+text-align:center;
+color:#FFFFFF;
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+line-height:2.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+color:#FFFFFF;
+background-color:#510F10;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs1 {
+display:block;
+opacity:0;
+width:100%;
+height:100%;
+text-align:center;
+color:#FF0000;
+background-color:rgba(41, 0, 0, 0.72);
+font-family: 'Teko', sans-serif;
+text-transform:uppercase;
+font-size:2vh;
+line-height:6.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs1:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs2 {
+display:block;
+width:100%;
+height:100%;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24 {
+display: none;
+}
+
+h1 {
+color:#652324;
+font-family: 'Teko', sans-serif;
+border-bottom:1px solid #222222;
+text-align:center;
+}
+
+i {
+color:#652324;
+}
+
+a {
+color:#666666;
+text-decoration:none;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#652324;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#FF0000;
+text-transform:uppercase;
+font-family: 'Teko', sans-serif;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/others/oth-6/oth661.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Hind+Vadodara|Teko" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('box2').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="rightsymbol"></div>
+<div id="leftsymbol"></div>
+<div id="copyright">
+<span class="tabs2" onClick="changeNavigation ('tab10')">©</span>
+</div>
+<div id="venus">
+<a target="_blank" href="http://venus.chatango.com">♀️</a>
+</div>
+<div id="box1"></div>
+<div id="title">
+Will of War
+</div>
+<div id="tabholder">
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab7')">Details</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab2')">Lore</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab3')">History</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab4')">Items</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab5')">Racials</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab6')">Magic</span>
+</div>
+</div>
+<div id="box2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Cwhdv84.png"/>
+</div>
+<div id="box3"></div>
+<div id="basics">
+<b>Name:</b> Ares <font color="#666666">||</font> <b>Gender:</b> Male <font color="#666666">||</font> <b>Species:</b> Willchild
+</div>
+<div id="box4"></div>
+<div id="content">
+<b>Appearance:</b><br>
+Work in progress.
+<br><br>
+<b>Personality:</b><br>
+Work in progress.
+</div>
+<div id="box5">
+<span class="tabs1" onClick="changeNavigation1 ('tab8')"></span>
+</div>
+<div id="box6">
+<span class="tabs1" onClick="changeNavigation1 ('tab9')"></span>
+</div>
+
+<div id="tab1">
+<h1>Heading One</h1>
+<b>Bold</b><br>
+<i>Italic</i><br>
+<a target="_blank" href="http://">Link</a><br>
+Normal text.
+</div>
+<div id="tab7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Cwhdv84.png"/>
+</div>
+
+<div id="tab2">
+During the dawn of man's evolution, when life itself was new and magic first stretched its ambient existence across the Collective, borders between realities did not exist. Beings could pass freely from one world to another, allowing for endless exploration and a vast realm full of so many possibilities. Mankind's ability to constantly adapt, combined with their capacity for passion unseen by any other race outside of their planes of existence, attracted the attention of many beings from the outside. Creatures and entities unable to exist within the worlds inhabited by man--simply because their own existences defied the laws of reality contained within the realms of man--were attracted to the show, watching without being able to interact. Among these beings, three in particular became rather attached to mankind and his developments, causing one of them to eventually figure out a way to create a host body that could contain his consciousness. He took pieces of their worlds to create his new body, and formed it to appear as close to them as he possibly could, allowing him to walk among them as one of them. 
+<br><br>
+What started as a project turned into a nightmare. Not properly adjusted to being among a very ambitious people, the darker sides of humanity began to manifest in this entity--who was dubbed "Will" because his true name is not translatable into any language our minds can comprehend or access--corrupting him and turning him to a greedy being full of power-lust. He wanted to control and conquer, so he amassed himself an army. Will bred with the most powerful and "perfect" human female specimens he could get his hands on, procreating a horde of superhuman children capable of incredible strength, speed, and a foreign form of magic only he had been able to practice thus far. Isolated from all other forms of society save for their own, the Willchildren were brainwashed into taking their sire's cause. Horrible training conditions were demanded of them from too young an age, morphing them into horrific beasts of war as they grew old enough to handle themselves on the battlefield. Will's armies of his own offspring swept the realms of man and trailed a path of blood behind them, massacring for the sake of killing, overthrowing for the sake of conquering and ownership. Wherever they went, they quickly overcame any erected defenses, and made slaves of the minimal survivors. 
+<br><br>
+Completely disgusted by the actions of their counterpart, the two other beings in relation with Will--known to us as "Destiny" and "Fate"--desperately searched for a way to end the suffering of the people they'd grown rather fond of despite only being able to watch from the outside. In a similar method that allowed Will to access the world enough to create a host from it, they tapped into mankind's realities to rip them apart and create barriers between worlds, separating the planes of existence into completely separate entities one could not traverse without the help of the arcane arts. Both good and bad things came from these splits, the good being that the Willchildren were taken by complete surprise, divided from each other and trapped in their separate realms, with no way to cross the divides and regroup. The downside to these actions was that by creating separations they also disrupted the natural flow of magic, cutting off some kinds from some worlds entirely. Not much time passed before the Willchildren managed to find ways through these walls and divides, and with their bypasses came a whole new revolution, except this time mankind had little to no power whatsoever to even attempt to stop them. Things were getting worse, it was time for Fate and Destiny to intervene even further. 
+<br><br>
+They brought the fight to Will, making vessels for themselves as he had but working together to save humanity, not enslave it. The first thing they did in their new bodies was create a living weapon, a new race of spiritual creatures known as Will-o'-the-Wisps designed specifically to be effective tools to kill off Willchildren. The next step was to restore magical balance, so they created and planted trees to act as catalysts, tying specific magics that humans had lost back to their worlds, giving them another chance to defend themselves. A war was waged, Fate and Destiny against Will and his massive army. The battle was horrendous, and many died, but none of it was in vain. Eventually the two pro-freedom deities managed to defeat their corrupted brother and seal him away where he continues to fester in his intense anger, manipulating what remains of his children even from his restraints, and constantly planning his own escape...
+</div>
+
+<div id="tab3">
+Work in progress.
+</div>
+
+<div id="tab4">
+Work in progress.
+</div>
+
+<div id="tab5">
+<b>Aging</b><br>
+The being that fathered this strange race was a spiritual entity that fashioned a humanoid body to host his conscious, and therefore was an immortal being not affected by time. His direct first generation children inherited aging traits from both sides, born and raised like humans aging progressively through the years, but once their mental and physical age reached peak maturity they stop aging altogether. This usually happens around late twenties or early thirties. 
+<br><br>
+<b>Mana's Manifestation</b><br>
+Mana is a magical almost sentient life force that exists in all beings (at least, in the worlds that Fate, Destiny, and Will took pleasure in it existed in all beings) and is the key part of casting magic spells. Without mana, magic would be impossible, but for Willchildren some forms of magic are impossible. The only kind they are able to create is something commonly known as "anti-magic" which is an arcane art that actively counters and deconstructs all other forms of magic. The difference is mostly in aesthetic since typical mana can be colored and have different interesting traits that vary from user to user, but the mana of a Willchild is either strictly black or transparent. 
+<br><br>
+<b>Enhanced Strength</b><br>
+A typical Willchild with the average healthy body can reach twice the natural strength of the average human, but should they actually strength train their muscles they can reach higher levels. Currently, Venus keeps herself stagnant at about x4. It isn't only their muscles that need to be strong though, her bones are also as tough as cobalt, allowing her to add more force to her strength than she usually might be able to without strain. 
+<br><br>
+<b>Enhanced Speed</b><br>
+Their bodies can be trained to reach speeds quadruple what a typical human is capable of. (x4) 
+<br><br>
+<b>Enhanced Perception</b><br>
+Just as her body can move faster than a human's, her mind can also process things at an accelerated rate, and her body's muscle memory is capable of kicking in and reacting at greater speeds as well. (x4)
+</div>
+
+<div id="tab6">
+<p align="center"><b>War God's "Willpower"</b></p>
+Those who practice this form of magic function on a system rather similar in nature to photosynthesis, with their limited Mana Pools replacing sunlight’s role of providing energy, while magical energies act as the resulting input and output For a Willchild to cast spells at all they must draw on the already existing energies of either ambient mana or the base mana structure of another mage’s spells, requiring magic to be present nearby in some shape or form. The more powerful a wielder of Willpower becomes the more in tune with mystical energies they become, allowing them to eventually convert foreign spells into their own, as well as gaining enough familiarity with mana in its rawest purest form to passively sense its power level when in use. It is not impossible to hide this information from their detection, but such phenomena requires forethought.
+</div>
+
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/ExnlFz4.png"/>
+</div>
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/31wUdQe.png"/>
+</div>
+
+<div id="tab10">
+<b>Image Sources:</b><br>
+<a target="_blank" href="https://www.zerochan.net/2266597">https://www.zerochan.net/2266597</a><br>
+<a target="_blank" href="https://danbooru.donmai.us/posts/3025263">https://danbooru.donmai.us/posts/3025263</a><br>
+<a target="_blank" href="https://www.zerochan.net/1913452">https://www.zerochan.net/1913452</a><br>
+<a target="_blank" href="https://weheartit.com/entry/309033929">https://weheartit.com/entry/309033929</a><br><br>
+<b>Music:</b><br>
+<a target="_blank" href="https://www.youtube.com/watch?v=PY-BvPriIBo">The Witcher 3: Wild Hunt OST - Hunt Or Be Hunted [HQ] [Extended]</a><br><br>
+<b>Cursor:</b><br>
+<a target="_blank" href="http://www.cursors-4u.com/">Cursors-4u</a><br><br>
+<b>Theme Creator:</b><br>
+<a target="_blank" href="http://fae.chatango.com">Fae</a><br><br>
+<i>Note:</i> Greyed text above = clickable links.
+</div>
+
+<embed style="height: 0%; width: 0%;"src="Ares.mp3" autostart="true" loop="true">
